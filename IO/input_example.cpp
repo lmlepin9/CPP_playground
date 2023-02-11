@@ -26,6 +26,11 @@ int GetInterger(){
 }
 
 std::string GetYesorNo(){
+
+    /* 
+    This function asks to the user for a "yes" or "no" answer,
+    if the user's input is not proprely formatted it will ask again 
+    */
     std::string your_answer;
     while((std::cout << "Answer yes or no ") && ( !(std::cin >> your_answer) || (your_answer != "yes" && your_answer != "no") ) ){
         std::cout << "Please, just answer yes or no, try again" << std::endl;
