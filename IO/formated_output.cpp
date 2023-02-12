@@ -22,7 +22,7 @@ int main(){
 
     std::cout << "\n" << std::endl;
 
-    // In this we just need to use it once
+    // In this one we just need to use it once
     std::cout.setf(std::ios::fixed, std::ios::floatfield);
     std::cout << std::setprecision(2) << "Our best estimate of the speed of light is (" << speed_of_light_estimate <<
     " +/- "  << speed_of_light_error  << ")x10^8 m/s" << std::endl; 

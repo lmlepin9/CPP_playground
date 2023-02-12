@@ -1,6 +1,17 @@
 #include <iostream>
 #include <limits>
-#include <string> 
+#include <string>
+#include <sstream>
+
+
+
+bool GetTrueFalse(){
+    bool my_boolean;  
+    std::cout << "Input true or false" << std::endl;
+    // boolalpha allows to interprete the string "true" as 1 and the string "false" as 0 
+    std::cin >> std::boolalpha >> my_boolean; 
+    return my_boolean;
+}
 
 
 int GetInterger(){
@@ -42,7 +53,6 @@ std::string GetYesorNo(){
     return your_answer;
 }
 
-// V and (V or (F and F) )
 
 int main(){
 
@@ -51,6 +61,8 @@ int main(){
     std::cout << "Your interger is: " << input_int << std::endl;
     std::string input_yn = GetYesorNo() ; 
     std::cout << "You answer is: " << input_yn << std::endl;
+    bool your_boolean = GetTrueFalse();
+    std::cout << "Your booelan is: " << your_boolean << std::endl;
     return 0;
 }
 
