@@ -14,6 +14,14 @@ int main(){
     c3.print_complex();
 
     std::cout << "Testing << overload: " << c3 << std::endl; 
+    std::cout << "\n";
+
+
+    std::cout << "Now we'll test the extraction operator... " << std::endl;
+    std::cout << "Please input the real and imaginary parts as Re Im" << std::endl;
+    Complex c4;
+    if(std::cin >> c4){c4.print_complex();}
+    else{std::cout << "Extraction failed..." << std::endl;}
 
     return 0; 
 }

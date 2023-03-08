@@ -34,4 +34,9 @@ std::ostream & operator<<(std::ostream &os, const Complex &c){
     return os;  
 }
 
+std::istream & operator>>(std::istream &is, Complex &c){
+   is >> c.re >> c.im;
+   return is;  
+}
+
 
