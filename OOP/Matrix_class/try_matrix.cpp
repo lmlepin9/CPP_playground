@@ -34,6 +34,12 @@ int main(){
     std::cout << m4(1,1) << std::endl;
     std::cout << m5(1,1) << std::endl;
 
+    m4.print_matrix();
+    m5.print_matrix();
+
+    Matrix m6;
+    m6 = m5+m4;
+    m6.print_matrix();
 
 
 
